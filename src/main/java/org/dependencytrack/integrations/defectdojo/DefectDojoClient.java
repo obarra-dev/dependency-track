@@ -36,6 +36,7 @@ import java.util.Date;
 public class DefectDojoClient {
 
     private static final Logger LOGGER = Logger.getLogger(DefectDojoClient.class);
+    
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
     private final DefectDojoUploader uploader;
     private final URL baseURL;
