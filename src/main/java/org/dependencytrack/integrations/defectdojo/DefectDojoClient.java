@@ -115,7 +115,7 @@ public class DefectDojoClient {
         return null;
     }
 
-    // Given the engagement id and scan type, search for existing test id
+    // Given the engagement id and scan type, search for existing test id test
     public String getDojoTestId(final String engagementID,  final ArrayList dojoTests) {
         for (int i = 0; i < dojoTests.size(); i++) {
             String s = dojoTests.get(i).toString();
