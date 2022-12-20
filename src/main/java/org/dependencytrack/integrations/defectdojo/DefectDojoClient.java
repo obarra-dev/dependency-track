@@ -36,7 +36,8 @@ import java.util.Date;
 public class DefectDojoClient {
 
     private static final Logger LOGGER = Logger.getLogger(DefectDojoClient.class);
-    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    
+    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
     private final DefectDojoUploader uploader;
     private final URL baseURL;
 
@@ -114,7 +115,7 @@ public class DefectDojoClient {
         return null;
     }
 
-    // Given the engagement id and scan type, search for existing test id
+    // Given the engagement id and scan type, search for existing test id test
     public String getDojoTestId(final String engagementID,  final ArrayList dojoTests) {
         for (int i = 0; i < dojoTests.size(); i++) {
             String s = dojoTests.get(i).toString();
